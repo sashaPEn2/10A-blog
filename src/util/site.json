@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "Новости | 10А Столинской государственной гимназии",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
+    "description": "Добро пожаловать на новостной сайт 10А класса Столинской государственной гимназии! Здесь вы найдете актуальные и интересные новости о школьной жизни, достижениях учеников, мероприятиях и событиях в гимназии.",
+    "siteUrl": "https://blog-10a.netlify.app",
+    "image": "/assets/10а.png",
+    "iconimage": "/assets/10а.png",
+    "twitterUsername": ""
   },
   "ga": "UA-XXXXXXXXX-X"
 }
