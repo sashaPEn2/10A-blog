@@ -74,7 +74,7 @@ const Pagination = props => (
       {!props.isLast && (
         <li>
           <Link to={props.nextPage} rel="next">
-            Вперёд" "}
+            Вперёд {" "}
             <span className="icon -right">
               <RiArrowRightLine />
             </span>
