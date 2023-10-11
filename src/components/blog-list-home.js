@@ -16,7 +16,7 @@ export default function BlogListHome(props) {
 const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>
-      Latest in <strong>Blog</strong>{" "}
+      Последние <strong>новсти</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
@@ -29,7 +29,7 @@ const PostMaker = ({ data }) => (
         variant: "variants.button",
       }}
     >
-      See more
+      Больше новостей
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
