@@ -53,24 +53,24 @@ const Contact = ({ data }) => {
           <p>
             <label>
               Имя
-              <input type="text" name="name" required />
+              <input type="text" name="Имя" required />
             </label>
           </p>
           <p>
             <label>
               Почта
-              <input type="email" name="email" required />
+              <input type="email" name="Почта" required />
             </label>
           </p>
           <p>
             <label>
               Тема письма
-              <input type="text" name="subject" required />
+              <input type="text" name="Тема письма" required />
             </label>
           </p>
           <p>
             <label>
-              Текст<textarea name="message" required></textarea>
+              Текст<textarea name="Текст" required></textarea>
             </label>
           </p>
           <p className="text-align-right">
