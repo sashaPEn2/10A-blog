@@ -62,9 +62,9 @@ backend:
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
-  - label: "Страницы"
-    name: "pages"
-    files:
+      - label: "Страницы"
+        name: "pages"
+        files:
         - label: "Главная"
           name: "home"
           file: "src/content/pages/index.md"
