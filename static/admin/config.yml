@@ -169,11 +169,11 @@ collections:
         name: "socialIcons"
         file: "src/util/socialmedia.json"
         fields:
-            label: "socialIcons"
-            name: "socialIcons"
-            widget: list
-            collapsed: true
-            hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку Добавить значки социальных сетей."
+           - label: "socialIcons"
+             name: "socialIcons"
+             widget: list
+             collapsed: true
+             hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку Добавить значки социальных сетей."
             fields: 
                - label: "Значки", 
                  name: "icon", 
