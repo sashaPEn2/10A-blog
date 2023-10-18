@@ -2,5 +2,8 @@
   "prettier.useTabs": true,
   "editor.tabSize": 2,
   "html.format.wrapLineLength": 80,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "yaml.schemas": {
+    "https://json.schemastore.org/netlify.json": "github://github%2B7b2276223a312c22726566223a7b2274797065223a362c226964223a226d61696e227d7d/sashaPEn2/10A-blog/static/admin/config.yml"
+  }
 }

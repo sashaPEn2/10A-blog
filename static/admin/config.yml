@@ -1,12 +1,12 @@
- backend:
+backend: 
   name: git-gateway
   branch: main
   commit_messages:
-    create: "Создать {{collection}} “{{slug}}”"
-    update: "Обновить {{collection}} “{{slug}}”"
-    delete: "Удалить {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] Загрузить “{{path}}”"
-    deleteMedia: "[skip ci] Удалить “{{path}}”"
+  create: "Создать {{collection}} “{{slug}}”"
+  update: "Обновить {{collection}} “{{slug}}”"
+  delete: "Удалить {{collection}} “{{slug}}”"
+  uploadMedia: "[skip ci] Загрузить “{{path}}”"
+  deleteMedia: "[skip ci] Удалить “{{path}}”"
 
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
@@ -17,7 +17,7 @@
 
   collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Новости" # Used in the UI
+    label: "Post" # Used in the UI
     label_singular: "пост" # Used in the UI, ie: "New Post"
     description: >
       Создавайте потрясающий контент здесь.
@@ -62,13 +62,13 @@
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
-   - label: "Страницы"
+  - label: "Страницы"
     name: "pages"
     files:
-      - label: "Главная"
-        name: "home"
-        file: "src/content/pages/index.md"
-        fields:
+        - label: "Главная"
+          name: "home"
+          file: "src/content/pages/index.md"
+          fields:
           - {
               label: "Template",
               name: "template",
@@ -124,7 +124,7 @@
     - name: settings
     label: Настройки сайта
     files:
-       - name: general
+      - name: general
         label: Основные настройки
         file: "src/util/site.json"
         fields:
