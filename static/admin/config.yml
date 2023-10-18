@@ -123,10 +123,10 @@ collections:
   - name: settings
     label: Настройки сайта
     files:
-        - name: general
-          label: Основные настройки
-          file: "src/util/site.json"
-          fields:
+    - name: general
+      label: Основные настройки
+      file: "src/util/site.json"
+      fields:
             - label: meta
               name: meta
               widget: object
