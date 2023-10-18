@@ -121,10 +121,10 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-  - name: settings
+    - name: settings
     label: Настройки сайта
     files:
-      - name: general
+       - name: general
         label: Основные настройки
         file: "src/util/site.json"
         fields:
