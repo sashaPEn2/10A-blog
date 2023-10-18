@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] Upload “{{path}}”"
-    deleteMedia: "[skip ci] Delete “{{path}}”"
+    create: "Создать {{collection}} “{{slug}}”"
+    update: "Обновить {{collection}} “{{slug}}”"
+    delete: "Удалить {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Загрузить “{{path}}”"
+    deleteMedia: "[skip ci] Удалить “{{path}}”"
 
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
@@ -16,10 +16,10 @@ public_folder: "/assets"
 
 collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Posts" # Used in the UI
-    label_singular: "Post" # Used in the UI, ie: "New Post"
+    label: "Новости" # Used in the UI
+    label_singular: "пост" # Used in the UI, ie: "New Post"
     description: >
-      Create awesome content here.
+      Создавайте потрясающий контент здесь.
     folder: "src/content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
@@ -31,24 +31,24 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Заголовок", name: "title", widget: "string", tagname: "h1" }
       - {
-          label: "Slug",
+          label: "Адрес поста",
           name: "slug",
           widget: "string",
-          hint: "Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+          hint: "Задайте адрес поста с помощью /. Используйте только буквенно-цифровые символы, - и _. Избегайте пробелов.",
         }
       - {
-          label: "Publish Date",
+          label: "Дата публикации",
           name: "date",
           widget: "datetime",
           dateFormat: "YYYY-MM-DD",
           timeFormat: "HH:mm",
           format: "YYYY-MM-DD HH:mm",
         }
-      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "Описание SEO", name: "description", widget: "text" }
       - {
-          label: "Featured Image",
+          label: "Отображаемое изображение",
           name: "featuredImage",
           widget: "image",
           required: false,
@@ -59,12 +59,12 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          hint: "Main content goes here.",
+          hint: "Основное содержание находится здесь.",
         }
-  - label: "Pages"
+  - label: "Страницы"
     name: "pages"
     files:
-      - label: "Home"
+      - label: "Главная"
         name: "home"
         file: "src/content/pages/index.md"
         fields:
@@ -74,11 +74,11 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Адрес", name: "slug", widget: "hidden", default: "/" }
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Подзаголовок", name: "tagline", widget: "string" }
+          - { label: "Отображаемое изображение", name: "featuredImage", widget: "image" }
+          - { label: "Основа страницы", name: "body", widget: "markdown" }
           - label: "CTA"
             name: "cta"
             widget: "object"
@@ -121,10 +121,10 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
   - name: settings
-    label: Settings
+    label: Настройки сайта
     files:
       - name: general
-        label: General
+        label: Основные настройки
         file: "src/util/site.json"
         fields:
           - label: meta
@@ -133,49 +133,49 @@ collections:
             fields:
               - widget: string
                 name: title
-                label: Site Title
+                label: Заголовок сайта
                 required: true
               - widget: string
                 name: titleTemplate
-                label: Title Template
+                label: Шаблон заголовка
                 default: "%s"
                 required: true
               - widget: string
                 name: siteUrl
-                label: Website URL
+                label: URL веб-сайта
                 required: true
               - widget: text
                 name: description
-                label: Description
+                label: Описание
                 default: ""
                 required: false
               - widget: image
                 name: image
-                label: image
+                label: Изображение
                 default: "/assets/stackrole.png"
               - widget: image
                 name: iconimage
-                label: favicon
+                label: Иконка сайта
               - widget: string
                 name: twitterUsername
                 label: Twitter
                 required: false
 
-          - label: "Google Analytics"
+          - label: "Google Аналитика"
             name: ga
             widget: string
-            hint: "Add you tracking ID, for example UA-XXXXXXXXX-X"
-      - label: Social Icons
+            hint: "Добавьте свой идентификатор отслеживания статистики сайта, например UA-XXXXXXXXX-X"
+      - label: Значки социальных сетей 
         name: socialIcons
         file: "src/util/socialmedia.json"
         fields:
-          - label: Social Icons
+          - label: Значки социальных сетей 
             name: socialIcons
             widget: list
             collapsed: true
-            hint: "Here you can add social icons, Click on 'Add social icons'"
+            hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку "Добавить значки социальных сетей"."
             fields:
-              - label: "Icons"
+              - label: "Значки"
                 name: "icon"
                 widget: "select"
                 options:
@@ -198,31 +198,31 @@ collections:
                     "behance",
                     "vk",
                   ]
-                hint: "Select the Icon"
+                hint: "Выберите значок"
               - widget: string
                 name: url
                 label: url
                 required: true
-                hint: "Paste the 'URL' of your Social media"
+                hint: "Вставьте "URL" вашей социальной сети"
 
-  - label: "Appearance"
+  - label: "Внешний вид сайта"
     name: "appearance"
     identifier_field: "name"
     files:
-      - label: "Default Theme"
+      - label: "Стандартная тема"
         name: "themescolors"
         file: "src/util/default-colors.json"
         fields:
-          - label: "Primary Color"
+          - label: "Основной цвет"
             name: "siteColor"
             widget: "color"
             enableAlpha: true
             allowInput: true
-      - label: "Dark Theme"
+      - label: "Темная тема"
         name: "darkthemescolors"
         file: "src/util/dark-theme-colors.json"
         fields:
-          - label: "Primary Color"
+          - label: "Основной цвет"
             name: "siteColor"
             widget: "color"
             enableAlpha: true
