@@ -175,7 +175,7 @@ collections:
             collapsed: true
             hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку Добавить значки социальных сетей."
             fields: 
-            - label: "Значки", 
+          - label: "Значки", 
               name: "icon", 
               widget: "select", 
               options: [
