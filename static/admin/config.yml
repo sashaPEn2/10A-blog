@@ -165,12 +165,12 @@ collections:
             name: ga
             widget: string
             hint: "Добавьте свой идентификатор отслеживания статистики сайта, например UA-XXXXXXXXX-X"
-      - label: Значки социальных сетей 
-        name: socialIcons
+      - label: "Значки социальных сетей"
+        name: "socialIcons"
         file: "src/util/socialmedia.json"
         fields:
           - label: "socialIcons"
-            name: socialIcons
+            name: "socialIcons"
             widget: list
             collapsed: true
             hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку "Добавить значки социальных сетей"."
