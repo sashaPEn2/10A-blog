@@ -1,4 +1,4 @@
-backend:
+  backend:
   name: git-gateway
   branch: main
   commit_messages:
@@ -12,10 +12,10 @@ backend:
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
 #Перевод на русский язык сделал Невдах Александр. Столин. 2023
 
-media_folder: "static/assets"
-public_folder: "/assets"
+ media_folder: "static/assets"
+ public_folder: "/assets"
 
-collections:
+ collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Новости" # Used in the UI
     label_singular: "пост" # Used in the UI, ie: "New Post"
