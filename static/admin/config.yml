@@ -1,0 +1,229 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Создать {{collection}} “{{slug}}”"
+    update: "Обновить {{collection}} “{{slug}}”"
+    delete: "Удалить {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Загрузить “{{path}}”"
+    deleteMedia: "[skip ci] Удалить “{{path}}”"
+
+# Uncomment local_backend when you need to develop in your local
+#local_backend: true # run `npx netlify-cms-proxy-server` for local testing
+#Перевод на русский язык сделал Невдах Александр. Столин. 2023
+
+media_folder: "static/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Новости" # Used in the UI
+    label_singular: "пост" # Used in the UI, ie: "New Post"
+    description: >
+      Создавайте потрясающий контент здесь.
+    folder: "src/content/posts"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Заголовок", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "Адрес поста",
+          name: "slug",
+          widget: "string",
+          hint: "Задайте адрес поста с помощью /. Используйте только буквенно-цифровые символы, - и _. Избегайте пробелов.",
+        }
+      - {
+          label: "Дата публикации",
+          name: "date",
+          widget: "datetime",
+          dateFormat: "YYYY-MM-DD",
+          timeFormat: "HH:mm",
+          format: "YYYY-MM-DD HH:mm",
+        }
+      - { label: "Описание SEO", name: "description", widget: "text" }
+      - {
+          label: "Отображаемое изображение",
+          name: "featuredImage",
+          widget: "image",
+          required: false,
+          tagname: "",
+        }
+
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          hint: "Основное содержание находится здесь.",
+        }
+  - label: "Страницы"
+    name: "pages"
+    files:
+      - label: "Главная"
+        name: "home"
+        file: "src/content/pages/index.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: "Адрес", name: "slug", widget: "hidden", default: "/" }
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Подзаголовок", name: "tagline", widget: "string" }
+          - { label: "Отображаемое изображение", name: "featuredImage", widget: "image" }
+          - { label: "Основа страницы", name: "body", widget: "markdown" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - name: "ctaText"
+                label: "CTA text"
+                widget: "string"
+              - name: "ctaLink"
+                label: "CTA Link"
+                widget: "string"
+      - label: "About"
+        name: "about"
+        file: "src/content/pages/about.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/about" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/content/pages/contact.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/contact",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: settings
+    label: Настройки сайта
+    files:
+      - name: general
+        label: Основные настройки
+        file: "src/util/site.json"
+        fields:
+            - label: meta
+              name: meta
+              widget: object
+              fields:
+              - widget: string
+                name: title
+                label: Заголовок сайта
+                required: true
+                - widget: string
+                name: titleTemplate
+                label: Шаблон заголовка
+                default: "%s"
+                required: true
+                - widget: string
+                  name: siteUrl
+                  label: URL веб-сайта
+                  required: true
+                - widget: text
+                  name: description
+                  label: Описание
+                  default: ""
+                  required: false
+                - widget: image
+                  name: image
+                  label: Изображение
+                  default: "/assets/stackrole.png"
+                - widget: image
+                  name: iconimage
+                  label: Иконка сайта
+                - widget: string
+                  name: twitterUsername
+                  label: Twitter
+                  required: false
+
+          - label: "Google Аналитика"
+            name: ga
+            widget: string
+            hint: "Добавьте свой идентификатор отслеживания статистики сайта, например UA-XXXXXXXXX-X"
+          - label: "Значки социальных сетей"
+            name: "socialIcons"
+            file: "src/util/socialmedia.json"
+            fields:
+              - label: "socialIcons"
+                name: "socialIcons"
+                widget: list
+                collapsed: true
+                hint: "Здесь вы можете добавить значки социальных сетей, нажмите на кнопку Добавить значки социальных сетей."
+                fields: 
+                  - label: "Значки", 
+                    name: "icon", 
+                    widget: "select", 
+                    options: [
+                      "facebook",
+                      "twitter",
+                      "linkedin",
+                      "youtube",
+                      "instagram",
+                      "rss",
+                      "github",
+                      "telegram",
+                      "pinterest",
+                      "snapchat",
+                      "skype",
+                      "wordpress",
+                      "tiktok",
+                      "dribbble",
+                  "medium",
+                  "behance",
+                      "vk",
+                  ]
+                hint: "Выберите значок"
+              - widget: string
+                name: url
+                label: url
+                required: true
+                hint: "Вставьте "URL" вашей социальной сети"
+
+  - label: "Внешний вид сайта"
+    name: "appearance"
+    identifier_field: "name"
+    files:
+      - label: "Стандартная тема"
+        name: "themescolors"
+        file: "src/util/default-colors.json"
+        fields:
+          - label: "Основной цвет"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+      - label: "Темная тема"
+        name: "darkthemescolors"
+        file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Основной цвет"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
