@@ -62,7 +62,7 @@ collections:
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
-  - label: "Страницы"
+   - label: "Страницы"
     name: "pages"
     files:
       - label: "Главная"
