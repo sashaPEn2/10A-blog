@@ -169,7 +169,7 @@ collections:
         name: socialIcons
         file: "src/util/socialmedia.json"
         fields:
-          - label: Social Icons
+          - label: socialIcons
             name: socialIcons
             widget: list
             collapsed: true
