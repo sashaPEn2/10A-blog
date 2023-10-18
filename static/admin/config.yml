@@ -1,4 +1,4 @@
-backend: 
+ backend: 
    name: git-gateway
    branch: main
    commit_messages:
