@@ -1,12 +1,12 @@
 backend: 
-  name: git-gateway
-  branch: main
-  commit_messages:
-  create: "Создать {{collection}} “{{slug}}”"
-  update: "Обновить {{collection}} “{{slug}}”"
-  delete: "Удалить {{collection}} “{{slug}}”"
-  uploadMedia: "[skip ci] Загрузить “{{path}}”"
-  deleteMedia: "[skip ci] Удалить “{{path}}”"
+   name: git-gateway
+   branch: main
+   commit_messages:
+   create: "Создать {{collection}} “{{slug}}”"
+   update: "Обновить {{collection}} “{{slug}}”"
+   delete: "Удалить {{collection}} “{{slug}}”"
+   uploadMedia: "[skip ci] Загрузить “{{path}}”"
+   deleteMedia: "[skip ci] Удалить “{{path}}”"
 
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
