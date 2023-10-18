@@ -123,43 +123,43 @@ collections:
   - name: settings
     label: Настройки сайта
     files:
-      - name: general
-        label: Основные настройки
-        file: "src/util/site.json"
-        fields:
-          - label: meta
-            name: meta
-            widget: object
-            fields:
-              - widget: string
-                name: title
-                label: Заголовок сайта
-                required: true
-              - widget: string
-                name: titleTemplate
-                label: Шаблон заголовка
-                default: "%s"
-                required: true
-              - widget: string
-                name: siteUrl
-                label: URL веб-сайта
-                required: true
-              - widget: text
-                name: description
-                label: Описание
-                default: ""
-                required: false
-              - widget: image
-                name: image
-                label: Изображение
-                default: "/assets/stackrole.png"
-              - widget: image
-                name: iconimage
-                label: Иконка сайта
-              - widget: string
-                name: twitterUsername
-                label: Twitter
-                required: false
+       - name: general
+         label: Основные настройки
+         file: "src/util/site.json"
+         fields:
+           - label: meta
+             name: meta
+             widget: object
+             fields:
+               - widget: string
+                 name: title
+                 label: Заголовок сайта
+                 required: true
+               - widget: string
+                 name: titleTemplate
+                 label: Шаблон заголовка
+                 default: "%s"
+                 required: true
+               - widget: string
+                 name: siteUrl
+                 label: URL веб-сайта
+                 required: true
+               - widget: text
+                 name: description
+                 label: Описание
+                 default: ""
+                 required: false
+               - widget: image
+                 name: image
+                 label: Изображение
+                 default: "/assets/stackrole.png"
+               - widget: image
+                 name: iconimage
+                 label: Иконка сайта
+               - widget: string
+                 name: twitterUsername
+                 label: Twitter
+                 required: false
 
           - label: "Google Аналитика"
             name: ga
