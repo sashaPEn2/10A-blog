@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiBugLine, RiSkullLine } from "react-icons/ri"
+import { RiArrowLeftSLine, RiBugLine, RiSkullLine, RiAlertFill } from "react-icons/ri"
 
 import Seo from "../components/seo"
 import Layout from "../components/layout"
@@ -15,7 +15,7 @@ const NotFound = () => (
       }}
     >
       <header>
-        <RiSkullLine
+        <RiAlertFill
           style={{
             fontSize: "128px",
             color: "var(--primary-color)",
