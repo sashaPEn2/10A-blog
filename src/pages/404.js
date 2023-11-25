@@ -21,18 +21,18 @@ const NotFound = () => (
             color: "var(--primary-color)",
           }}
         />
-        <h1>Oops we did not expect that to happen</h1>
+        <h1>Упс, мы не ожидали, что это произойдет</h1>
         <p>
-          Have you wondered into the unknow. Let us help you, Please take a look
-          at below options
+        Вы отправлялись в неизведанное. Позвольте нам помочь вам, пожалуйста, ознакомьтесь
+        с приведенными ниже вариантами
         </p>
       </header>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
-        Back to Homepage
+        Вернуться на главную страницу
       </Link>
       <Link to="/contact" className="button -outline">
-        Report this <RiBugLine className="icon -right" />
+       Сообщить об этом <RiBugLine className="icon -right" />
       </Link>
     </div>
   </Layout>
