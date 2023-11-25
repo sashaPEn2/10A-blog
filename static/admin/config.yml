@@ -36,19 +36,19 @@ collections:
           label: "Путь к новости",
           name: "slug",
           widget: "string",
-          hint: "Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+          hint: "Начинайте путь с "/". Используйте только буквенно-цифровые символы, "-" и "_". Во остальных случаях избегайте пробелов.",
         }
       - {
-          label: "Publish Date",
+          label: "Дата публикации",
           name: "date",
           widget: "datetime",
           dateFormat: "YYYY-MM-DD",
           timeFormat: "HH:mm",
           format: "YYYY-MM-DD HH:mm",
         }
-      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "Описание SEO", name: "description", widget: "text" }
       - {
-          label: "Featured Image",
+          label: "Изображение",
           name: "featuredImage",
           widget: "image",
           required: false,
@@ -56,10 +56,10 @@ collections:
         }
 
       - {
-          label: "Body",
+          label: "Новость",
           name: "body",
           widget: "markdown",
-          hint: "Main content goes here.",
+          hint: "Основное содержание находится здесь.",
         }
   - label: "Pages"
     name: "pages"
