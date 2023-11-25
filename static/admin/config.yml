@@ -19,7 +19,7 @@ collections:
     label: "Новости" # Used in the UI
     label_singular: "Пост" # Used in the UI, ie: "New Post"
     description: >
-      Create awesome content here.
+      Создавайте потрясающий контент здесь.
     folder: "src/content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
