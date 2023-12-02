@@ -131,6 +131,7 @@ export const pageQuery = graphql`
         slug
         title
         description
+        author
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
