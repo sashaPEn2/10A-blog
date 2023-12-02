@@ -1,7 +1,7 @@
 ---
 template: hashtag-post
 title: Поход в кинотеатр на премьеру фильма «Киношники»
-slug: /cinema-k
+slug: /cinema-k25
 date: 2023-11-17 21:30
 description: Поход 10А в кинотеатр на премьеру фильма «Киношники»
 featuredImage: /assets/41zpy0sfo8w8r8s0ao71wmj3ugyvwi7t.jpg
