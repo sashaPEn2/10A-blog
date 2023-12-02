@@ -2,7 +2,7 @@
 template: index-page
 slug: /
 title: Новости
-tagline: Читайте новости нашего класса на отдельном сайте.
+tagline: 10А Столинской государственной гимназии 2023/2024
 featuredImage: /assets/image-removebg-preview-3-.png
 cta:
   ctaText: Что нового?
