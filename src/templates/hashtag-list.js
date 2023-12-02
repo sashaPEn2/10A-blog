@@ -21,7 +21,7 @@ const styles = {
   },
 }
 
-export const blogListQuery = graphql`
+export const hashtagListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -83,7 +83,7 @@ const Pagination = props => (
     </ul>
   </div>
 )
-class BlogIndex extends React.Component {
+class HashtagIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
