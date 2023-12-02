@@ -91,7 +91,7 @@ const Post = ({ data, pageContext }) => {
         image={Image}
         article={true}
       />
-      <article className="blog-post">
+      <article className="hashtag-post">
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>

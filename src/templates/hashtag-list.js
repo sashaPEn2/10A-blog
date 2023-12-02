@@ -91,8 +91,8 @@ class BlogIndex extends React.Component {
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
-      currentPage - 1 === 1 ? blogSlug : blogSlug + (currentPage - 1).toString()
-    const nextPage = blogSlug + (currentPage + 1).toString()
+      currentPage - 1 === 1 ? hashtagSlug : hashtagSlug + (currentPage - 1).toString()
+    const nextPage = hashtagSlug + (currentPage + 1).toString()
 
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
@@ -123,4 +123,4 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default HashtagIndex
