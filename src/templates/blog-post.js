@@ -112,6 +112,7 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <author sx={{color: "muted"}}>{frontmatter.author}</author>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
