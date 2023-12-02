@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  publish_mode: editorial_workflow
   commit_messages:
     create: "Создать {{collection}} “{{slug}}”"
     update: "Обновить {{collection}} “{{slug}}”"
