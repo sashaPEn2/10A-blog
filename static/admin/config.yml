@@ -65,7 +65,7 @@ collections:
       - {
           label: "Автор",
           name: "author",
-          widget: "markdown",
+          widget: "string",
           hint: "Укажите имя и фамилию автора статьи.",
         }
   - label: "Страницы веб-сайта"
