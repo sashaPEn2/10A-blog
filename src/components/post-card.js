@@ -38,6 +38,7 @@ const PostCard = ({ data }) => (
           color: "muted",
         }}
       >
+        <author>{data.frontmatter.author}</author>
         <time>{data.frontmatter.date}</time>
       </p>
     </div>

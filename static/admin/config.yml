@@ -62,6 +62,12 @@ collections:
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
+      - {
+          label: "Автор",
+          name: "author",
+          widget: "markdown",
+          hint: "Укажите имя и фамилию автора статьи.",
+        }
   - label: "Страницы веб-сайта"
     name: "pages"
     files:
