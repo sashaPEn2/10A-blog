@@ -3,6 +3,8 @@ import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import { FaRegCalendarAlt } from "react-icons/fa";
+
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -95,7 +97,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            <FaRegCalendarAlt /> <time sx={{color: "muted"}}>{frontmatter.date}</time>
           </section>
           {Image ? (
             <GatsbyImage
