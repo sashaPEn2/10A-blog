@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 
 
@@ -99,7 +100,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> Автор: <author >{frontmatter.author}</author></p> 
+            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author></p> 
                                                                                               
            </section>
           {Image ? (
@@ -117,7 +118,6 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <p>Автор: <author sx={{color: "muted"}}>{frontmatter.author}</author></p>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
