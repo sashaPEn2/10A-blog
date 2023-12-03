@@ -8,4 +8,6 @@ cta:
   ctaText: Что нового?
   ctaLink: /blog
 ---
+<meta name="yandex-verification" content="8578b4db27d073dc" />
+
 Следите за жизнью нашего класса на этом сайте.
