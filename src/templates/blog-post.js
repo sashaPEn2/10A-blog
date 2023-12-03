@@ -6,6 +6,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { FaRegClock } from "react-icons/fa";
 
 
 
@@ -100,7 +101,8 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author></p> 
+            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock />
+ <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author></p> 
                                                                                               
            </section>
           {Image ? (
