@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { IoRemoveOutline } from "react-icons/io5";
+
 
 
 import Layout from "../components/layout"
@@ -97,7 +99,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <FaRegCalendarAlt /> <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            <FaRegCalendarAlt /> <time sx={{color: "muted"}}>{frontmatter.date}</time> <IoRemoveOutline /> <h3>Автор: <author>{frontmatter.author}</author></h3>
           </section>
           {Image ? (
             <GatsbyImage
