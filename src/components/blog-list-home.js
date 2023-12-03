@@ -21,7 +21,7 @@ const PostMaker = ({ data }) => (
         <RiArrowDownLine />
       </span>
     </h2>
-    <div className="grids col-1 sm-2 lg-3">{data}</div>
+    <div className="grids col-1 sm-2 lg-3">{data.frontmatter.author}</div>
     <Link
       className="button"
       to="/blog"
