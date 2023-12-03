@@ -99,7 +99,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <FaRegCalendarAlt /> <time sx={{color: "muted"}}>{frontmatter.date}</time> <IoRemoveOutline /> <h3>Автор: <author>{frontmatter.author}</author></h3>
+            <p><FaRegCalendarAlt /> <time sx={{color: "muted"}}>{frontmatter.date}</time> <IoRemoveOutline /> Автор: <author>{frontmatter.author}</author></p>
           </section>
           {Image ? (
             <GatsbyImage
