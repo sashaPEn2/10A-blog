@@ -137,6 +137,7 @@ export const pageQuery = graphql`
         slug
         title
         description
+        timeforread
         author
         featuredImage {
           childImageSharp {
