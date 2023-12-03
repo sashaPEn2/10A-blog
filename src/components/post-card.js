@@ -40,8 +40,8 @@ const PostCard = ({ data }) => (
           color: "muted",
         }}
       >
-       <p><BsFillPeopleFill /><author>{data.frontmatter.author}</author></p>
-       <FaRegCalendarAlt /><time>{data.frontmatter.date}</time>
+       <p><BsFillPeopleFill /> <author>{data.frontmatter.author}</author></p>
+       <FaRegCalendarAlt /> <time>{data.frontmatter.date}</time>
       </p>
     </div>
   </article>
