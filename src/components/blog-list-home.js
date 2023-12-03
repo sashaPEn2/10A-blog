@@ -9,6 +9,7 @@ export default function BlogListHome(props) {
   const data = props.data
   const posts = data.edges
     .filter(edge => !!edge.node.frontmatter.date)
+    .filter(edge => !!edge.node.frontmatter.author)
     .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
   return <PostMaker data={posts} />
 }
