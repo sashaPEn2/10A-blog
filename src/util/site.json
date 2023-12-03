@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Новости | 10А Столинской государственной гимназии",
+    "yandex-verification": "8578b4db27d073dc",
     "titleTemplate": "%s",
     "description": "Добро пожаловать на новостной сайт 10А класса Столинской государственной гимназии! Здесь вы найдете актуальные и интересные новости о школьной жизни, достижениях учеников, мероприятиях и событиях в гимназии.",
     "siteUrl": "https://blog-10a.netlify.app",
     "image": "/assets/10а.png",
     "iconimage": "/assets/10а.png",
-    "twitterUsername": "",
-    "yandex-verification": "8578b4db27d073dc"
+    "twitterUsername": ""
   },
   "ga": "UA-XXXXXXXXX-X"
 }
