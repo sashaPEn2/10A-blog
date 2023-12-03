@@ -2,6 +2,8 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { BsFillPeopleFill } from "react-icons/bs";
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 const PostCard = ({ data }) => (
   <article
@@ -38,8 +40,8 @@ const PostCard = ({ data }) => (
           color: "muted",
         }}
       >
-       <p><author>{data.frontmatter.author}</author></p>
-        <time>{data.frontmatter.date}</time>
+       <p><BsFillPeopleFill /><author>{data.frontmatter.author}</author></p>
+       <FaRegCalendarAlt /><time>{data.frontmatter.date}</time>
       </p>
     </div>
   </article>
