@@ -27,6 +27,7 @@ const SEO = ({ title, description, image, article }) => {
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <html lang="ru-RU" />
+      <meta name="yandex-verification" content="8578b4db27d073dc" />
       <link rel="alternate" href={seo.url} hreflang="ru-ru" />
       <link rel="alternate" href={seo.url} hreflang="ru" />
       <link rel="alternate" href={seo.url} hreflang="x-default" />
