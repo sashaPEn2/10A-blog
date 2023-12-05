@@ -31,6 +31,8 @@ const SEO = ({ title, description, image, article }) => {
       <link rel="alternate" href={seo.url} hreflang="ru-ru" />
       <link rel="alternate" href={seo.url} hreflang="ru" />
       <link rel="alternate" href={seo.url} hreflang="x-default" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1056474268918055"
+     crossorigin="anonymous"></script>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta
