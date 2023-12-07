@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Новости
 tagline: 10А Столинской государственной гимназии 2023/2024
-featuredImage: /assets/image-removebg-preview-3-.png
+featuredImage: /assets/изображение_viber_2023-10-30_10-51-39-791.jpg
 cta:
   ctaText: Что нового?
   ctaLink: /blog
