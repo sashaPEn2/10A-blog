@@ -75,7 +75,7 @@ const NotFound = () => (
 </table>
 
 <h2>Дни здоровья</h2>
-<table class="events-health">
+<center><table class="events-health">
 <thead>
   <tr>
     <th class="tg-0pky">Дата</th>
@@ -117,10 +117,10 @@ const NotFound = () => (
   </tr>
 </tbody>
 </table>
-
+</center>
 <h2>Общегимназические мероприятия</h2>
 
-<table class="global-events">
+<center><table class="global-events">
 <thead>
   <tr>
     <th class="tg-0lax">Дата</th>
@@ -130,7 +130,7 @@ const NotFound = () => (
 <tbody>
   <tr>
     <td class="tg-0lax">28.10</td>
-    <td class="tg-0lax">Ярмарка талантов 2023</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/yarmarka-2023" target="_blank" rel="noopener noreferrer">Ярмарка талантов 2023</a></td>
   </tr>
   <tr>
     <td class="tg-0lax">16.03</td>
@@ -142,7 +142,7 @@ const NotFound = () => (
   </tr>
 </tbody>
 </table>
-
+</center>
       </header>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
