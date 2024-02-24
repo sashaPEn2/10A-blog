@@ -17,13 +17,13 @@ const NotFound = () => (
       }}
     >
       <header>
-        <div><MdEvent
+        <div class="event-2"><MdEvent
           style={{
             fontSize: "64px",
             color: "var(--primary-color)",
           }}
         />
-         <h1 class="event-2">Мероприятия</h1>
+         <h1>Мероприятия</h1>
         </div>
 <table class="events">
 <thead>
