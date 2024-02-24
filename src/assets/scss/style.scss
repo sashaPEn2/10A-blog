@@ -28,10 +28,10 @@
     margin-left: 20px;
   }
   a {
-    color: rgba(45, 47, 156, 0.6);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     &:hover {
-      color: rgba(37, 42, 110, 0.8);
+      color: rgba(255, 255, 255, 0.842);
     }
   }
   a[aria-current="page"] {
