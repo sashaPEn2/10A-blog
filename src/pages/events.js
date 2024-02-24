@@ -73,6 +73,52 @@ const NotFound = () => (
   </tr>
 </tbody>
 </table>
+
+
+<table class="events-health">
+<thead>
+  <tr>
+    <th class="tg-0pky">Дата</th>
+    <th class="tg-0pky">Название</th>
+    <th class="tg-0pky">Время</th>
+    <th class="tg-0pky">Место</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">09.01.2023</td>
+    <td class="tg-acii">День здоровья, посвященный началу учебного года.</td>
+    <td class="tg-xls6">11:00</td>
+    <td class="tg-0pky">Двор гимназии</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">11.11.2023</td>
+    <td class="tg-acii"><a href="https://blog-10a.netlify.app/volleyball" target="_blank" rel="noopener noreferrer">Праздник волейбола</a></td>
+    <td class="tg-xls6">10:00</td>
+    <td class="tg-0pky">Спортзал</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">09.12.2023</td>
+    <td class="tg-acii"><a href="https://blog-10a.netlify.app/football-2023" target="_blank" rel="noopener noreferrer">Мини-футбол</a></td>
+    <td class="tg-xls6">11:00</td>
+    <td class="tg-0pky">Спортзал</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">13.01.2024</td>
+    <td class="tg-acii">Лыжные гонки «Снежный снайпер»</td>
+    <td class="tg-xls6">10:00</td>
+    <td class="tg-0pky">Двор гимназии</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">11.05.2024</td>
+    <td class="tg-acii">День здоровья, посвященный окончанию учебного года</td>
+    <td class="tg-xls6">10:00</td>
+    <td class="tg-0pky">Двор гимназии</td>
+  </tr>
+</tbody>
+</table>
+
+
       </header>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />

@@ -441,6 +441,17 @@ article img {
   vertical-align: middle;
   display: inline-block; 
 }
+
+
+.events-health  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+.events-health td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.events-health th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.events-health .events-health-acii{background-color:#FFF;border-color:inherit;color:#333;text-align:left;vertical-align:top}
+.events-health .events-health-xls6{background-color:#FFF;border-color:inherit;color:#333;text-align:left;vertical-align:middle}
+.events-health .events-health-0pky{border-color:inherit;text-align:left;vertical-align:top}
+
 @import "utility";
 
 // Libraries
