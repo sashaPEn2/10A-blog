@@ -21,7 +21,7 @@ const NotFound = () => (
             color: "var(--primary-color)",
           }}
         />
-<table class="tg">
+<table class="events">
 <thead>
   <tr>
     <th class="tg-0pky">Дата</th>
