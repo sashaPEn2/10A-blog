@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiBugLine, RiSkullLine, RiAlertFill } from "react-icons/ri"
+import { MdEvent } from "react-icons/md";
+
 
 import Seo from "../components/seo"
 import Layout from "../components/layout"
@@ -15,18 +17,18 @@ const NotFound = () => (
       }}
     >
       <header>
-        <RiAlertFill
+        <MdEvent
           style={{
             fontSize: "128px",
             color: "var(--primary-color)",
           }}
-        />
+        /><h1>Мероприятия</h1>
 <table class="events">
 <thead>
   <tr>
     <th class="tg-0pky">Дата</th>
     <th class="tg-0pky">Название мероприятия</th>
-    <th class="tg-0pky">Время*</th>
+    <th class="tg-0pky">Время</th>
     <th class="tg-0pky">Место</th>
   </tr>
 </thead>
