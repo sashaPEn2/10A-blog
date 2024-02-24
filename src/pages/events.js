@@ -118,6 +118,30 @@ const NotFound = () => (
 </tbody>
 </table>
 
+<h2>Общегимназические мероприятия</h2>
+
+<table class="global-events">
+<thead>
+  <tr>
+    <th class="tg-0lax">Дата</th>
+    <th class="tg-0lax">Название</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">28.10</td>
+    <td class="tg-0lax">Ярмарка талантов 2023</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">16.03</td>
+    <td class="tg-0lax">Мисс гимназии 2024</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">18.05</td>
+    <td class="tg-0lax">День гимназии</td>
+  </tr>
+</tbody>
+</table>
 
       </header>
       <Link to="/" className="button">
