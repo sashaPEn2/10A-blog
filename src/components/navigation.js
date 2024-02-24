@@ -15,8 +15,8 @@ const MenuItems = [
     title: "Новости",
   },
   {
-    path: "/site-home",
-    title: "Наш сайт",
+    path: "/events",
+    title: "Мероприятия",
   },
   {
     path: "/contact",
