@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 
 const NotFound = () => (
   <Layout className="not-found-page">
-    <Seo title="Наш сайт" />
+    <Seo title="Мероприятия" />
     <div
       className="wrapper"
       style={{
@@ -17,13 +17,13 @@ const NotFound = () => (
       }}
     >
       <header>
-        <div class="event-1"><MdEvent
+        <div><MdEvent
           style={{
             fontSize: "64px",
             color: "var(--primary-color)",
           }}
         />
-        <h1 class="event-2">Мероприятия</h1>
+         <span class="event-2">Мероприятия</span>
         </div>
 <table class="events">
 <thead>
