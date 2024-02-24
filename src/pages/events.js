@@ -19,7 +19,7 @@ const NotFound = () => (
       <header>
         <MdEvent
           style={{
-            fontSize: "128px",
+            fontSize: "64px",
             color: "var(--primary-color)",
           }}
         /><h1>Мероприятия</h1>
