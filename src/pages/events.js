@@ -17,8 +17,7 @@ const NotFound = () => (
       }}
     >
       <header>
-        <h1 style="display: inline-block; margin-left: 8px;">
-          <MdEvent
+        <h1 class="event-text"><MdEvent
           style={{
             fontSize: "64px",
             color: "var(--primary-color)",
