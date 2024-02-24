@@ -74,7 +74,7 @@ const NotFound = () => (
 </tbody>
 </table>
 
-
+<h2>Дни здоровья</h2>
 <table class="events-health">
 <thead>
   <tr>
