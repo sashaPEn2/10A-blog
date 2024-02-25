@@ -48,7 +48,6 @@ class Navigation extends React.Component {
     const listMenuItems = MenuItems.map((menuItem, index) => (
       <ListLink key={index} to={menuItem.path}>
         {menuItem.title}
-        <a href="https://blog-10a.netlify.app/admin/"><GrLogin /></a>
       </ListLink>
     ))
     return (
@@ -70,7 +69,6 @@ class Navigation extends React.Component {
           <div sx={navStyle.border}></div>
           <div sx={navStyle.theme}>
             <Theme />
-            <div sx={navStyle.theme}><a href="https://blog-10a.netlify.app/admin/"><GrLogin /></a></div>
           </div>
         </ul>
       </nav>
