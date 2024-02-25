@@ -13,7 +13,7 @@ const MenuItems = [
   },
   {
     path: "/blog",
-    title: "Новости",
+    title: "Что нового?",
   },
   {
     path: "/events",
