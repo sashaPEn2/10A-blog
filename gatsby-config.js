@@ -121,15 +121,5 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-    module.exports = {
-      plugins: [
-          {
-              resolve: `gatsby-plugin-disqus`,
-              options: {
-                  shortname: `blog-10a-stolin`
-              }
-          },
-      ]
-  }
   ],
 }
