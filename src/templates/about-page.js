@@ -24,7 +24,7 @@ const AboutPage = ({ data }) => {
     <Layout className="page">
       <Seo title={frontmatter.title} description={excerpt} />
       <div className="wrapper">
-        <h1>{frontmatter.title}</h1>
+        <center><h1>{frontmatter.title}</h1></center>
         <article dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
