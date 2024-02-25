@@ -1,10 +1,8 @@
 ---
 template: about-page
 slug: /events
-title: About Foundation
+title: Мероприятия
 ---
-<h1>Мероприятия</h1>
-
 
 <div class="event-2"><MdEvent
           style={{
