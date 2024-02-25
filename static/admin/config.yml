@@ -102,9 +102,9 @@ collections:
               - name: "ctaLink"
                 label: "CTA Link"
                 widget: "string"
-      - label: "О нас"
-        name: "about"
-        file: "src/content/pages/about.md"
+      - label: "Мероприятия"
+        name: "events"
+        file: "src/content/pages/events.md"
         fields:
           - {
               label: "Шаблон",
