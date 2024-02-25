@@ -14,6 +14,7 @@ const Footer = () => (
       <p>
         2024 © 10А Столинской государственной гимназии.
       </p>
+      <p><a href="https://blog-10a.netlify.app/admin">Вход для администраторов</a></p>
     </div>
   </footer>
 )
