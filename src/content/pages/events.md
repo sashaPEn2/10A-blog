@@ -4,7 +4,7 @@ slug: /events
 title: Мероприятия
 ---
 
-<div class="event-2"><MdEvent
+<center><div class="event-2"><MdEvent
           style={{
             fontSize: "64px",
             color: "var(--primary-color)",
@@ -63,9 +63,8 @@ title: Мероприятия
 
 
 
-
 <h2>Дни здоровья</h2>
-<center><table class="events-health">
+<table class="events-health">
 <thead>
   <tr>
     <th class="tg-0pky">Дата</th>
@@ -107,7 +106,7 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
-</center>
+
 <h2>Общегимназические мероприятия</h2>
 
 <center><table class="global-events">
