@@ -10,6 +10,8 @@ import { FaRegClock } from "react-icons/fa";
 
 
 
+
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -119,12 +121,13 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        
       </article>
+      
       {(previous || next) && <Pagination {...props} />}
     </Layout>
   )
 }
-
 export default Post
 
 export const pageQuery = graphql`
