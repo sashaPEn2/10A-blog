@@ -4,14 +4,7 @@ slug: /events
 title: Мероприятия
 ---
 
-<center><div class="event-2"><MdEvent
-          style={{
-            fontSize: "64px",
-            color: "var(--primary-color)",
-          }}
-        />
-         <h1>Мероприятия</h1>
-        </div>
+<center>
 <table class="events">
 <thead>
   <tr>
