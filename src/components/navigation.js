@@ -4,6 +4,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
 import Theme from "../components/theme"
+import { GrLogin } from "react-icons/gr";
 
 const MenuItems = [
   {
@@ -68,6 +69,7 @@ class Navigation extends React.Component {
           <div sx={navStyle.border}></div>
           <div sx={navStyle.theme}>
             <Theme />
+            <a href="https://blog-10a.netlify.app/admin/"><GrLogin /></a>
           </div>
         </ul>
       </nav>
