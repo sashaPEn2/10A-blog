@@ -70,7 +70,7 @@ class Navigation extends React.Component {
           <div sx={navStyle.border}></div>
           <div sx={navStyle.theme}>
             <Theme />
-            <a href="https://blog-10a.netlify.app/admin/"><GrLogin /></a>
+            <div sx={navStyle.theme}><a href="https://blog-10a.netlify.app/admin/"><GrLogin /></a></div>
           </div>
         </ul>
       </nav>
