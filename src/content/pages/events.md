@@ -26,6 +26,18 @@ title: Мероприятия
     <td class="tg-0pky">18:00</td>
     <td class="tg-0pky">Кинотеатр «Экран»</td>
   </tr>
+<tr>
+    <td class="tg-0lax">18.11.2023</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/quiz" target="_blank" rel="noopener noreferrer">Интеллектуальная викторина</a></td>
+    <td class="tg-0lax">11:20</td>
+    <td class="tg-0lax">Кабинет №32</td>
+  </tr>
+<tr>
+    <td class="tg-0lax">01.12.2023</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/quiz-2023" target="_blank" rel="noopener noreferrer">Молодежный квиз 2023</a></td>
+    <td class="tg-0lax">13:20</td>
+    <td class="tg-0lax">Актовый зал</td>
+  </tr>
   <tr>
     <td class="tg-0pky">02.12.2023</td>
     <td class="tg-0pky"><a href="https://blog-10a.netlify.app/bibliotheca/kvest" target="_blank" rel="noopener noreferrer">Квест «Наша малая Родина»</a></td>
@@ -39,7 +51,7 @@ title: Мероприятия
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
  <tr>
-    <td class="tg-0lax">01.03.2024</td>
+    <td class="tg-0lax">01.02.2024</td>
     <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">1 марта — Международный день борьбы с наркоманией и наркобизнесом
 </td>
 <td class="tg-0lax">13:20</td>
@@ -59,7 +71,7 @@ title: Мероприятия
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
 </tbody>
-</table>
+</table>2
 
 <h2>Дни здоровья</h2>
 <table class="events-health">
