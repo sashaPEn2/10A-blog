@@ -38,12 +38,20 @@ title: Мероприятия
     <td class="tg-0lax">12:00</td>
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
-  <tr>
+ <tr>
+    <td class="tg-0lax">01.03.2024</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">1 марта — Международный день борьбы с наркоманией и наркобизнесом
+</td>
+<td class="tg-0lax">13:20</td>
+    <td class="tg-0lax">Центральная библиотека</td>
+  </tr>
+<tr>
     <td class="tg-0lax">02.03.2024</td>
     <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">Квест «По страницам истории»</a></td>
     <td class="tg-0lax">11:30</td>
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
+    
   <tr>
     <td class="tg-0lax">20.04.2024</td>
     <td class="tg-0lax">Психологический тест «Дороги, которые мы выбираем»</td>
