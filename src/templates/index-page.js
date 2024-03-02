@@ -255,7 +255,7 @@ const HomePage = ({ data }) => {
           )}
         </div>
       </div>
-      <CommingCard data={posts}></CommingCard>
+      
       <BlogListHome data={posts} />
     </Layout>
   )
