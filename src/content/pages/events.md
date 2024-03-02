@@ -47,7 +47,7 @@ title: Мероприятия
   </tr>
 <tr>
     <td class="tg-0lax">02.03.2024</td>
-    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">Квест «По страницам истории»</a></td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/pages-about-history" target="_blank" rel="noopener noreferrer">Квест «По страницам истории»</a></td>
     <td class="tg-0lax">11:30</td>
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
