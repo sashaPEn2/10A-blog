@@ -3,7 +3,6 @@ template: about-page
 slug: /events
 title: Мероприятия
 ---
-
 <center>
 <table class="events">
 <thead>
@@ -43,7 +42,7 @@ title: Мероприятия
     <td class="tg-0lax">02.03.2024</td>
     <td class="tg-0lax">Квест «По страницам истории»</td>
     <td class="tg-0lax">11:30</td>
-    <td class="tg-0lax">Центральная библиотека</td>
+    <td class="tg-0lax">Кабинет №32</td>
   </tr>
   <tr>
     <td class="tg-0lax">20.04.2024</td>
@@ -53,8 +52,6 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
-
-
 
 <h2>Дни здоровья</h2>
 <table class="events-health">
