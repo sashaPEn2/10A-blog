@@ -73,6 +73,11 @@ const Contact = ({ data }) => {
               Текст<textarea name="Текст" required></textarea>
             </label>
           </p>
+          <p>
+            <label>
+              Прекрепить вложение<input type="file" name="file"/>
+            </label>
+          </p>
           <p className="text-align-right">
             <button
               className="button"
