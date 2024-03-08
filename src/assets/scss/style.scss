@@ -462,3 +462,77 @@ article img {
 
 // Libraries
 @import "lib/prism-default";
+
+$banner-width: 20em;
+$banner-height: 5em;
+
+*,
+*::before,
+*::after {
+	position: relative;
+	box-sizing: border-box;
+	transition: 1s all linear;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background-color: lighten(black, 20%);
+	color: #fff;
+}
+
+.banner {
+	width: $banner-width;
+	background: red;
+	height: $banner-height;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	border-radius: .3em;
+	
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.55);
+	}
+}
+
+.shopping-image {
+	height: auto;
+	width: $banner-width / 2;
+	// transform: translateX(-1 * ($banner-width / 2)) translateY(-1 * $banner-height);
+	// overflow: hidden;
+	
+	> img {
+		height: $banner-height;
+		width: $banner-width / 2;
+		object-fit: cover;
+		border-radius: 0 2em 2em 0 / 0 3em 3em 0;
+		box-shadow: 3px 5px 1px 3px darken(red, 20%);
+	}
+}
+
+.text {
+	height: $banner-height;
+	width: $banner-width / 2;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+	> * {
+			font-szie: 12px;
+			text-align: center;
+	}
+}
+
+a {
+	color: #fff;
+}
