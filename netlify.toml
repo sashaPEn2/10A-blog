@@ -12,3 +12,33 @@
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
+[[plugins]]
+package = "netlify-plugin-rss"
+  [plugins.inputs]
+  # required configs, customize as needed
+  dirToScan = "/blog" # a subfolder to scan. "/" to scan all
+  authorName = "AlexanderNevdah"
+  site_url = "https://blog-10a.netlify.app"
+  title = "Новости 10А Столинской государственной гимназии"
+  rssDescription = "Blog-10a rss feed"
+  categories = ['Образование', 'Дети', 'Беларусь']
+ 
+  # # optional configs, defaults shown
+  # rssFaviconUrl = "https://swyx.io/favicon.png"
+  # docs = "http://example.com/rss/docs.html"
+  # managingEditor = "authorName"
+  # webMaster = "authorName"
+  copyright = "2024 ${authorName}"
+  language = "ru"
+  # pubDate = "new Date().toUTCString(),"
+  # ttl = "60" # aka refresh every hour
+ 
+  # # cheerio selectors for extractMetadataFromFile
+  # # defaults shown
+  # contentSelector = "main"
+  # publishDateSelector = # if not specified, we use the date of file creation
+  # descriptionSelector = "meta[name=description]" # probably no need to change
+  # titleSelector = "title" # probably no need to change
+ 
+  # # developer configs
+  # debugMode = false # (for development) turn true for extra diagnostic logging
