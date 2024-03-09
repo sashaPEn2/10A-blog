@@ -118,7 +118,7 @@ title: Мероприятия
 </tbody>
 </table>
 
-<h2>Общегимназические мероприятия</h2>
+<h2>Общегимназические мероприятия<a href="#cite-1">¹</a></h2>
 
 <center><table class="global-events">
 <thead>
@@ -142,5 +142,5 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
-<cite><a id="cite-1">¹ — по данным сайта Столинской государственной гимназии.</cite>
+<cite><a id="cite-1">¹</a> — по данным сайта <a href="https://gim.roo-stolin.gov.by/%D1%83%D1%87%D0%B0%D1%89%D0%B8%D0%BC%D1%81%D1%8F/%D1%88%D0%B5%D1%81%D1%82%D0%BE%D0%B9-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C">Столинской государственной гимназии.</a></cite>
 </center>
