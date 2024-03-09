@@ -71,9 +71,9 @@ title: Мероприятия
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
 </tbody>
-</table>2
-
-<h2>Дни здоровья</h2>
+</table>
+<﻿hr>
+<h2>Дни здоровья<a href="">¹</h2>
 <table class="events-health">
 <thead>
   <tr>
