@@ -72,8 +72,9 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
-<﻿hr>
-<h2>Дни здоровья<a href="">¹</h2>
+
+
+<h2>Дни здоровья<a href="#cite-1">¹</a></h2>
 <table class="events-health">
 <thead>
   <tr>
@@ -141,4 +142,5 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
+<cite><a id="cite-1">¹ — по данным сайта Столинской государственной гимназии.</cite>
 </center>
