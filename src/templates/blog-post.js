@@ -34,12 +34,11 @@ const styles = {
 }
 
 const pdfContentEl = document.getElementById('pdf-content');
-
 const doc = new jsPDF();
-
 await doc.html(pdfContentEl.innerHTML).save('test.pdf');
+
 const Pagination = props => (
-  <div className="pagination -post" sx={styles.pagination}>
+ <div className="pagination -post" sx={styles.pagination}>
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
@@ -95,8 +94,8 @@ const Post = ({ data, pageContext }) => {
     next,
   }
 
-  return (
-    <div id="pdf-content">
+return (
+   <div id="pdf-content">
     <Layout className="page">
       <Seo
         title={frontmatter.title}
@@ -106,6 +105,7 @@ const Post = ({ data, pageContext }) => {
         image={Image}
         article={true}
       />
+     
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">
@@ -124,17 +124,12 @@ const Post = ({ data, pageContext }) => {
           )}
         </header>
       
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
         
       </article>
       
       {(previous || next) && <Pagination {...props} />}
-    </Layout>
-    <button id="save-pdf">Save PDF</button>
-
+      </Layout>
     </div>
   )
 }
