@@ -7,6 +7,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaRegClock } from "react-icons/fa";
+import { jsPDF } from 'jspdf';
 
 
 
@@ -32,6 +33,11 @@ const styles = {
   },
 }
 
+const pdfContentEl = document.getElementById('pdf-content');
+
+const doc = new jsPDF();
+
+await doc.html(pdfContentEl.innerHTML).save('test.pdf');
 const Pagination = props => (
   <div className="pagination -post" sx={styles.pagination}>
     <ul>
@@ -90,6 +96,7 @@ const Post = ({ data, pageContext }) => {
   }
 
   return (
+    <div id="pdf-content">
     <Layout className="page">
       <Seo
         title={frontmatter.title}
@@ -126,6 +133,9 @@ const Post = ({ data, pageContext }) => {
       
       {(previous || next) && <Pagination {...props} />}
     </Layout>
+    <button id="save-pdf">Save PDF</button>
+
+    </div>
   )
 }
 export default Post

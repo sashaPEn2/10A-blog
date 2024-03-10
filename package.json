@@ -43,6 +43,7 @@
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-transformer-remark": "^5.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
+    "jspdf": "^2.5.1",
     "netlify-cms-app": "^2.14.32",
     "passport-google-oauth": "^2.0.0",
     "passport-yandex": "^0.0.5",
