@@ -97,7 +97,8 @@ const Post = ({ data, pageContext }) => {
 return (
    
     <Layout className="page">
-      <Seo
+      <div id="pdf-content">
+        <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
@@ -105,10 +106,11 @@ return (
         image={Image}
         article={true}
       />
-     <div id="pdf-content">
+      </div>
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">
+          
             <h1>{frontmatter.title}</h1>
             <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author></p> 
                                                                                               
@@ -130,7 +132,7 @@ return (
       
       {(previous || next) && <Pagination {...props} />}
       </Layout>
-    </div>
+    
   )
 }
 export default Post
