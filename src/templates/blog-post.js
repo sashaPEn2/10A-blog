@@ -95,7 +95,7 @@ const Post = ({ data, pageContext }) => {
   }
 
 return (
-   <div id="pdf-content">
+   
     <Layout className="page">
       <Seo
         title={frontmatter.title}
@@ -105,7 +105,7 @@ return (
         image={Image}
         article={true}
       />
-     
+     <div id="pdf-content">
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">
