@@ -69,7 +69,6 @@ collections:
           required: false,
           tagname: "",
         }
-
       - {
           label: "Текст",
           name: "body",
