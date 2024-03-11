@@ -69,6 +69,7 @@ collections:
           required: false,
           tagname: "",
         }
+
       - {
           label: "Текст",
           name: "body",
@@ -80,7 +81,7 @@ collections:
         widget: relation
         collection: authors
         searchFields: [name, vkHandle]
-        valueField: name,
+        valueField: name
   fields: 
     - {label: Name, name: name, widget: string}
         
