@@ -16,6 +16,14 @@ media_folder: "static/assets"
 public_folder: "/assets"
 
 collections:
+  - name: authors
+    label: Authors
+    folder: "authors"
+    create: true
+    fields:
+      - {name: name, label: Name}
+      - {name: twitterHandle, label: "Twitter Handle"}
+      - {name: bio, label: Bio, widget: text}
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Новости" # Used in the UI
     label_singular: "Пост" # Used in the UI, ie: "New Post"
@@ -70,9 +78,10 @@ collections:
         }
       - {
           label: "Автор",
-          name: "author",
-          widget: "string",
-          hint: "Укажите имя и фамилию автора статьи.",
+          widget: relation,
+          collection: authors,
+          searchFields: [name, twitterHandle],
+          valueField: name
         }
   - label: "Страницы веб-сайта"
     name: "pages"
