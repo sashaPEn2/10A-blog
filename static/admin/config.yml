@@ -76,13 +76,13 @@ collections:
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
-      - {
-          label: "Автор",
-          widget: relation,
-          collection: authors,
-          searchFields: [name, twitterHandle],
-          valueField: name
-        }
+        - name: author
+        label: Author
+        widget: relation
+        collection: authors
+        searchFields: [name, twitterHandle]
+        valueField: name
+        
   - label: "Страницы веб-сайта"
     name: "pages"
     files:
