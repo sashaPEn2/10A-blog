@@ -82,10 +82,10 @@ collections:
         collection: authors
         searchFields: [name, vkHandle]
         valueField: name,
-       - label: "Tags"
-         name: "tags"
-         widget: "list"
-         summary: '{{fields.name}}'
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        summary: '{{fields.name}}'
   fields: 
     - {label: Name, name: name, widget: string}
         
