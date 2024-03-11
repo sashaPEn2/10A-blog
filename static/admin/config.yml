@@ -69,7 +69,6 @@ collections:
           required: false,
           tagname: "",
         }
-
       - {
           label: "Текст",
           name: "body",
@@ -82,7 +81,6 @@ collections:
         collection: authors
         searchFields: [name, vkHandle]
         valueField: name
-        
   - label: "Страницы веб-сайта"
     name: "pages"
     files:
