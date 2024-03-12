@@ -13,4 +13,10 @@ cta:
 <meta name="yandex-verification" content="8578b4db27d073dc" />
 
 Следите за жизнью нашего класса на этом сайте.
+<div class="banner">
 ![](/assets/мероприятие-посвященное-15-марта-—-день-конституции-республики-беларусь-1-.png)
+<﻿/div>
+<﻿style>
+border-radius: 10px;
+border: 5px #ccc solid;
+<﻿/style>
