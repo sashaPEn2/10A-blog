@@ -24,7 +24,7 @@ collections:
       - {name: name, label: Имя}
       - {name: vkHandle, label: "vkHandle"}
       - {name: bio, label: Биография, widget: text}
-  - name: Теги
+  - name: tags
     label: Теги
     folder: "tags"
     create: true
