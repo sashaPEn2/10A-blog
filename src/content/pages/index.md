@@ -15,8 +15,10 @@ cta:
 Следите за жизнью нашего класса на этом сайте.
 <div class="banner">
 ![](/assets/мероприятие-посвященное-15-марта-—-день-конституции-республики-беларусь-1-.png)
-<﻿/div>
-<﻿style>
+</div>
+<style>
+.banner {
 border-radius: 10px;
 border: 5px #ccc solid;
-<﻿/style>
+}
+</style>
