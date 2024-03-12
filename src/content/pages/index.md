@@ -18,6 +18,8 @@ cta:
 </div>
 <style>
 .banner {
-border-radius: 10px;
+border-radius: 11px;
+border: 2px #ccc solid;
+box-shadow: 0 0 10px #444;
 }
 </style>
