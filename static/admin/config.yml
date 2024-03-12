@@ -24,12 +24,6 @@ collections:
       - {name: name, label: Имя}
       - {name: vkHandle, label: "vkHandle"}
       - {name: bio, label: Биография, widget: text}
-  - name: tags
-    label: Теги
-    folder: "tags"
-    create: true
-    fields:
-      - {name: tagname, label: Название тега}
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Новости" # Used in the UI
     label_singular: "Пост" # Used in the UI, ie: "New Post"
