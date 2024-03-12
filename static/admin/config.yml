@@ -81,11 +81,6 @@ collections:
         collection: authors
         searchFields: [name, vkHandle]
         valueField: name
-  - label: "Tags"
-    name: "tags"
-    widget: "list"
-    summary: '{{fields.name}}'
-    field: {label: Name, name: name, widget: string}
   - label: "Страницы веб-сайта"
     name: "pages"
     files:
