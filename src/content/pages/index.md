@@ -19,6 +19,5 @@ cta:
 <style>
 .banner {
 border-radius: 10px;
-border: 5px #ccc solid;
 }
 </style>
