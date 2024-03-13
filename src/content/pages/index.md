@@ -9,14 +9,3 @@ cta:
   ctaLink: /blog
 ---
 Следите за жизнью нашего класса на этом сайте.
-
-<div class="banner">
-<img src="/assets/мероприятие-посвященное-15-марта-—-день-конституции-республики-беларусь-1-.png">
-</div>
-<style>
-.banner {
-border-radius: 11px;
-border: 2px #ccc solid;
-box-shadow: 0 0 10px #444;
-}
-</style>
