@@ -64,7 +64,7 @@ title: Мероприятия
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
     <tr>
-    <td class="tg-0lax">16.03.202</td>
+    <td class="tg-0lax">16.03.2024</td>
     <td class="tg-0lax">15 марта — День Конституции Республики Беларусь</td>
     <td class="tg-0lax">13:20</td>
     <td class="tg-0lax">Центральная библиотека</td>
