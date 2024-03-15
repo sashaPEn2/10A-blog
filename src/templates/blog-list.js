@@ -28,6 +28,10 @@ export const blogListQuery = graphql`
       filter: { frontmatter: { template: { eq: "blog-post" } } }
       limit: $limit
       skip: $skip
+      group(field: { frontmatter: { tags: SELECT } }) {
+        tag: fieldValue
+        totalCount
+      }
     ) {
       edges {
         node {
