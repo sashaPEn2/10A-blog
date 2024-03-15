@@ -89,7 +89,7 @@ const tags = result.data.tagsGroup.group
 // Make tag pages
 tags.forEach(tag => {
   createPage({
-    path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+    slug: `/tags/${_.kebabCase(tag.fieldValue)}/`,
     component: tagTemplate,
     context: {
       tag: tag.fieldValue,
