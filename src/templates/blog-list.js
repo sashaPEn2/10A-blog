@@ -117,7 +117,7 @@ class BlogIndex extends React.Component {
         <Seo
           title={"Новости — Страница " + currentPage + " из " + numPages}
           description={
-            "Stackrole base blog page " + currentPage + " из " + numPages
+            "Новости — Страница  " + currentPage + " из " + numPages
           }
         />
         <h1>Новости</h1>
