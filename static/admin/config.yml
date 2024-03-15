@@ -14,7 +14,7 @@ backend:
 
 media_folder: "static/assets"
 public_folder: "/assets"
-logo_url: https://blog-10a.netlify.app/icons/icon-384x384.png?v=5a26066d612807ac96f34a4754cb6b66
+logo_url: https://blog-10a.netlify.app/icons/icon-72x72.png?v=5a26066d612807ac96f34a4754cb6b66
 
 collections:
   - name: authors
