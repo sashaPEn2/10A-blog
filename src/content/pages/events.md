@@ -63,7 +63,12 @@ title: Мероприятия
     <td class="tg-0lax">11:30</td>
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
-    
+    <tr>
+    <td class="tg-0lax">16.03.202</td>
+    <td class="tg-0lax">15 марта — День Конституции Республики Беларусь</td>
+    <td class="tg-0lax">13:20</td>
+    <td class="tg-0lax">Центральная библиотека</td>
+  </tr>
   <tr>
     <td class="tg-0lax">20.04.2024</td>
     <td class="tg-0lax">Психологический тест «Дороги, которые мы выбираем»</td>
@@ -72,7 +77,6 @@ title: Мероприятия
   </tr>
 </tbody>
 </table>
-
 
 <h2>Дни здоровья<a href="#cite-1">¹</a></h2>
 <table class="events-health">
