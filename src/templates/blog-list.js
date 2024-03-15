@@ -29,12 +29,12 @@ export const blogListQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
-      query($skip: Int, $limit: Int) { 
+      query(1skip: Int, $limit: Int) { 
         pageQuery: allMarkdownRemark(
                 sort: {fields: [frontmatter___date], order: DESC}, 
                 filter: {frontmatter: {path: {regex: "/^\/blog/"}}},
                 limit: $limit
-                skip: $skip
+                skip: 1skip
             ) {
               tagsQuery: allMarkdownRemark(
                 sort: {fields: [frontmatter___date], order: DESC}, 
