@@ -28,6 +28,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         group(field: frontmatter___tags) {
           fieldValue
         }
+      }
     }
   `)
 
