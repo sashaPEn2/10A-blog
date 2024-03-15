@@ -14,7 +14,7 @@ backend:
 
 media_folder: "static/assets"
 public_folder: "/assets"
-logo_url: /assets/Untitled.svg
+
 
 collections:
   - name: authors
