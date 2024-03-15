@@ -75,6 +75,11 @@ collections:
           widget: "markdown",
           hint: "Основное содержание находится здесь.",
         }
+      - { 
+        name: tags, 
+        label: Tags, 
+        widget: list 
+        }
       - name: author
         label: Автор
         widget: relation

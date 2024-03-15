@@ -29,6 +29,17 @@ export const blogListQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
+      query($skip: Int, $limit: Int) { 
+        pageQuery: allMarkdownRemark(
+                sort: {fields: [frontmatter___date], order: DESC}, 
+                filter: {frontmatter: {path: {regex: "/^\/blog/"}}},
+                limit: $limit
+                skip: $skip
+            ) {
+              tagsQuery: allMarkdownRemark(
+                sort: {fields: [frontmatter___date], order: DESC}, 
+                filter: {frontmatter: {path: {regex: "/^\/blog/"}}},
+            ) {
       edges {
         node {
           id
@@ -49,8 +60,15 @@ export const blogListQuery = graphql`
     }
   }
 `
+
 const Pagination = props => (
   <div className="pagination" sx={styles.pagination}>
+    <h3 className="blog-tags">Tags:</h3>
+  {tags.map((tag) => (
+    <Link to={`/tags/${_.kebabCase(tag)}/`} className="blog-tags">
+      {tag}
+  </Link>
+  ))}
     <ul>
       {!props.isFirst && (
         <li>
@@ -109,6 +127,15 @@ class BlogIndex extends React.Component {
       isLast,
       nextPage,
     }
+    let tags = []
+    _.each(data.allMarkdownRemark.edges, edge => {
+        if (_.get(edge, "node.frontmatter.tags")) {
+          tags = tags.concat(edge.node.frontmatter.tags)
+        }
+      })
+  
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
 
     return (
       <Layout className="blog-page">
