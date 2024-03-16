@@ -12,10 +12,7 @@ backend:
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
 
-media_library:
-  name: uploadcare
-  config:
-    publicKey: 28d801fdf9f4474cce8e
+media_folder: static/assets
 public_folder: "/assets"
 
 
