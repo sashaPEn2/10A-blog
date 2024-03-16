@@ -1,12 +1,10 @@
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogList = path.resolve(`./src/templates/blog-list.js`)
-
 
   const result = await graphql(`
     {
@@ -24,7 +22,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
-
 
   // Handle errors
   if (result.errors) {
@@ -89,4 +86,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
-
