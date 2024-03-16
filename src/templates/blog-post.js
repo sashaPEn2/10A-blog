@@ -133,25 +133,41 @@ return (
 }
 export default Post
 
-export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY", locale: "ru-RU")
-        slug
-        title
-        description
-        timeforread
-        author
-        featuredImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+export const query = graphql`
+  query ($skip: Int, $limit: Int) {
+    pageQuery: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { path: { regex: "/^/blog/" } } }
+      limit: $limit
+      skip: $skip
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+            path
+            thumbnail
+            tags
           }
+          excerpt
+        }
+      }
+    }
+
+    tagsQuery: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { path: { regex: "/^/blog/" } } }
+    ) {
+      totalCount
+      nodes {
+        id
+        frontmatter {
+          tags
         }
       }
     }
   }
-`
+`;
