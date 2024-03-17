@@ -65,7 +65,7 @@ title: Мероприятия
   </tr>
     <tr>
     <td class="tg-0lax">16.03.2024</td>
-    <td class="tg-0lax">15 марта — День Конституции Республики Беларусь</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/Constitution-Day">15 марта — День Конституции Республики Беларусь</a></td>
     <td class="tg-0lax">13:20</td>
     <td class="tg-0lax">Центральная библиотека</td>
   </tr>
