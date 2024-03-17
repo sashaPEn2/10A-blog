@@ -23,18 +23,18 @@ const NotFound = () => (
             color: "var(--primary-color)",
           }}
         />
-         <h1>Мероприятия</h1>
+        <h1>Мероприятия</h1>
         </div>
-<table class="events">
-<thead>
+  <table class="events">
+  <thead>
   <tr>
     <th class="tg-0pky">Дата</th>
     <th class="tg-0pky">Название мероприятия</th>
     <th class="tg-0pky">Время</th>
     <th class="tg-0pky">Место</th>
   </tr>
-</thead>
-<tbody>
+  </thead>
+  <tbody>
   <tr>
     <td class="tg-0pky">01.11.2023</td>
     <td class="tg-0pky"><a href="https://blog-10a.netlify.app/museum-david" target="_blank" rel="noopener noreferrer">Экскурсия в музей истории Давид-Городка</a></td>
@@ -46,6 +46,18 @@ const NotFound = () => (
     <td class="tg-0pky"><a href="https://blog-10a.netlify.app/cinema-k" target="_blank" rel="noopener noreferrer">Поход на премьеру фильма «Киношники»</a></td>
     <td class="tg-0pky">18:00</td>
     <td class="tg-0pky">Кинотеатр «Экран»</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">18.11.2023</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/quiz" target="_blank" rel="noopener noreferrer">Интеллектуальная викторина</a></td>
+    <td class="tg-0lax">11:20</td>
+    <td class="tg-0lax">Кабинет №32</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">01.12.2023</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/quiz-2023" target="_blank" rel="noopener noreferrer">Молодежный квиз 2023</a></td>
+    <td class="tg-0lax">13:20</td>
+    <td class="tg-0lax">Актовый зал</td>
   </tr>
   <tr>
     <td class="tg-0pky">02.12.2023</td>
@@ -60,9 +72,21 @@ const NotFound = () => (
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
   <tr>
+    <td class="tg-0lax">01.02.2024</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">1 марта — Международный день борьбы с наркоманией и наркобизнесом</a></td>
+    <td class="tg-0lax">13:20</td>
+    <td class="tg-0lax">Центральная библиотека</td>
+  </tr>
+  <tr>
     <td class="tg-0lax">02.03.2024</td>
-    <td class="tg-0lax">Квест «По страницам истории»</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/pages-about-history" target="_blank" rel="noopener noreferrer">Квест «По страницам истории»</a></td>
     <td class="tg-0lax">11:30</td>
+    <td class="tg-0lax">Кабинет №32</td>
+  </tr>
+    <tr>
+    <td class="tg-0lax">16.03.2024</td>
+    <td class="tg-0lax">15 марта — День Конституции Республики Беларусь</td>
+    <td class="tg-0lax">13:20</td>
     <td class="tg-0lax">Центральная библиотека</td>
   </tr>
   <tr>
