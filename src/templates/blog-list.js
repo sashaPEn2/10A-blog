@@ -20,7 +20,7 @@ const styles = {
     },
   },
 }
-moment.locale();  
+
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
