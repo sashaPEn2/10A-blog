@@ -20,7 +20,7 @@ const styles = {
     },
   },
 }
-
+moment.locale();  
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -97,6 +97,7 @@ class BlogIndex extends React.Component {
 
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
+      .filter(edge => !!edge.node.frontmatter.author)
       .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
     let props = {
       isFirst,
