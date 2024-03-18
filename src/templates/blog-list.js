@@ -48,7 +48,6 @@ export const blogListQuery = graphql`
     }
   }
 `
-
 const Pagination = props => (
   <div className="pagination" sx={styles.pagination}>
     <ul>
@@ -98,7 +97,6 @@ class BlogIndex extends React.Component {
 
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
-      .filter(edge => !!edge.node.frontmatter.author)
       .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
     let props = {
       isFirst,
@@ -109,14 +107,13 @@ class BlogIndex extends React.Component {
       isLast,
       nextPage,
     }
-    
 
     return (
       <Layout className="blog-page">
         <Seo
           title={"Новости — Страница " + currentPage + " из " + numPages}
           description={
-            "Новости — Страница  " + currentPage + " из " + numPages
+            "Stackrole base blog page " + currentPage + " из " + numPages
           }
         />
         <h1>Новости</h1>
