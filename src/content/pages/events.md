@@ -51,7 +51,7 @@ title: Мероприятия
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
  <tr>
-    <td class="tg-0lax">01.02.2024</td>
+    <td class="tg-0lax">01.03.2024</td>
     <td class="tg-0lax"><a href="https://blog-10a.netlify.app/bibliotheca/1-march" target="_blank" rel="noopener noreferrer">1 марта — Международный день борьбы с наркоманией и наркобизнесом
 </td>
 <td class="tg-0lax">13:20</td>
