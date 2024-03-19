@@ -21,7 +21,6 @@ const styles = {
   },
 }
 
-
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -38,7 +37,6 @@ export const blogListQuery = graphql`
             date(formatString: "MMMM DD, YYYY", locale: "ru-RU")
             slug
             title
-            tags
             author
             featuredImage {
               childImageSharp {
@@ -97,15 +95,7 @@ class BlogIndex extends React.Component {
     const prevPage =
       currentPage - 1 === 1 ? blogSlug : blogSlug + (currentPage - 1).toString()
     const nextPage = blogSlug + (currentPage + 1).toString()
-    let tags = []
-    _.each(data.allMarkdownRemark.edges, edge => {
-        if (_.get(edge, "node.frontmatter.tags")) {
-          tags = tags.concat(edge.node.frontmatter.tags)
-        }
-      })
-  
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
+
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
       .filter(edge => !!edge.node.frontmatter.author)
@@ -128,12 +118,6 @@ class BlogIndex extends React.Component {
             "Stackrole base blog page " + currentPage + " из " + numPages
           }
         />
-        <h3 className="blog-tags">Tags:</h3>
-  {tags.map((tag) => (
-    <Link to={`/tags/${_.kebabCase(tag)}/`} className="blog-tags">
-      {tag}
-   </Link>
-  ))}
         <h1>Новости</h1>
         <div className="grids col-1 sm-2 lg-3">{posts}</div>
         <Pagination {...props} />
