@@ -71,6 +71,11 @@ collections:
           tagname: "",
         }
       - {
+          name: tags, 
+          label: Теги, 
+          widget: list
+        }
+      - {
           label: "Текст",
           name: "body",
           widget: "markdown",
