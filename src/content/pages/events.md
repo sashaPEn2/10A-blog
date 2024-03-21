@@ -137,7 +137,7 @@ title: Мероприятия
     <td class="tg-0lax"><a href="https://blog-10a.netlify.app/yarmarka-2023" target="_blank" rel="noopener noreferrer">Ярмарка талантов 2023</a></td>
   </tr>
   <tr>
-    <td class="tg-0lax">16.03</td>
+    <td class="tg-0lax">21.03</td>
     <td class="tg-0lax">Мисс гимназии 2024</td>
   </tr>
   <tr>
