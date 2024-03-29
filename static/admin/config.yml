@@ -13,11 +13,11 @@ backend:
 #local_backend: true # run `npx netlify-cms-proxy-server` for local testing
 
 media_folder: static/assets
-public_folder: "/assets"
 media_library:
   name: uploadcare
   config:
     publicKey: 28d801fdf9f4474cce8e
+public_folder: "/assets"
 publish_mode: editorial_workflow
 
 collections:
