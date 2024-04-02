@@ -75,7 +75,7 @@ const Contact = ({ data }) => {
           </p>
           <p>
             <label>
-              Прекрепить вложение<input type="file" name="file"/>
+              Прекрепить вложение<input type="file" name="Вложение"/>
             </label>
           </p>
           <p className="text-align-right">
