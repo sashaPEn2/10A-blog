@@ -9,19 +9,3 @@ cta:
   ctaLink: /blog
 ---
 Следите за жизнью нашего класса на этом сайте.
-<section class="wrapper">
-  <div class="content">
-    <header>
-      <h1>Subscribe Us</h1>
-    </header>
-    <section>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      </p>
-    </section>
-    <footer>
-      <input type="email" placeholder="Enter your email">
-      <button>Let's go</button>
-    </footer>
-  </div>
-</section>
