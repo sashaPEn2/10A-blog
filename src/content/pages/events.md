@@ -71,7 +71,7 @@ title: Мероприятия
   </tr>
   <tr>
     <td class="tg-0lax">20.04.2024</td>
-    <td class="tg-0lax">Психологический тест «Дороги, которые мы выбираем»</td>
+    <td class="tg-0lax"><a href="https://blog-10a.netlify.app/career-guidance-test">Психологический тест «Дороги, которые мы выбираем»</a></td>
     <td class="tg-0lax">12:00</td>
     <td class="tg-0lax">Кабинет №32</td>
   </tr>
