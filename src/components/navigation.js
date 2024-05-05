@@ -20,6 +20,10 @@ const MenuItems = [
     title: "Мероприятия",
   },
   {
+    path: "https://images-10a-stolin.vercel.app/",
+    title: "Галерея",
+  },
+  {
     path: "/contact",
     title: "Обратная связь",
   },
