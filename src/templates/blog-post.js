@@ -97,7 +97,7 @@ return (
     <Layout className="page">
         <Seo
         title={frontmatter.title}
-        tags={frontmatter.tags}
+        tags={Post.frontmatter.tags}    
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
@@ -111,7 +111,7 @@ return (
           
             <h1>{frontmatter.title}</h1>
             <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author> <tags>{frontmatter.tags}</tags> </p> 
-                                                                                              
+                                                                                          
            </section>
           {Image ? (
             <GatsbyImage
