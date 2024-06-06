@@ -108,7 +108,7 @@ return (
           <section className="article-header">
           
             <h1>{frontmatter.title}</h1>
-            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author><tags>{frontmatter.tags}</tags></p> 
+            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author> <tags>{Post.frontmatter.tags}</tags> </p> 
                                                                                               
            </section>
           {Image ? (
