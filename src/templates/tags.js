@@ -44,6 +44,7 @@ class TagRoute extends React.Component {
   }
 }
 
+
 export default TagRoute
 
 export const tagPageQuery = graphql`
