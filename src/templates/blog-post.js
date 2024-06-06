@@ -97,12 +97,14 @@ return (
     <Layout className="page">
         <Seo
         title={frontmatter.title}
+        tags={frontmatter.tags}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
         image={Image}
         article={true}
       />
+      
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">
@@ -127,7 +129,6 @@ return (
       </article>
 
       {(previous || next) && <Pagination {...props} />}
-      
       </Layout>
     
   )
