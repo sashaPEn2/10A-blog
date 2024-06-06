@@ -108,7 +108,7 @@ return (
           <section className="article-header">
           
             <h1>{frontmatter.title}</h1>
-            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author></p> 
+            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author><tags>{frontmatter.tags}</tags></p> 
                                                                                               
            </section>
           {Image ? (
@@ -125,8 +125,9 @@ return (
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
         
       </article>
-      
+
       {(previous || next) && <Pagination {...props} />}
+      
       </Layout>
     
   )
@@ -146,6 +147,7 @@ export const pageQuery = graphql`
         description
         timeforread
         author
+        tags
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
