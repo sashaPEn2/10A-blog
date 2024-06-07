@@ -122,7 +122,6 @@ return (
             ""
           )}
         </header>
-       tags={post.frontmatter.tags}
        <tags>{frontmatter.tags}</tags>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
        
