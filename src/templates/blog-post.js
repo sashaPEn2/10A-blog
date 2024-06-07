@@ -97,7 +97,6 @@ return (
     <Layout className="page">
         <Seo
         title={frontmatter.title}
-        tags={Post.frontmatter.tags}    
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
@@ -110,7 +109,7 @@ return (
           <section className="article-header">
           
             <h1>{frontmatter.title}</h1>
-            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author> <tags>{frontmatter.tags}</tags> </p> 
+            <p sx={{color: "muted"}}><FaRegCalendarAlt /> <time>{frontmatter.date}</time> <IoRemoveOutline /> <FaRegClock /> <timeforread>{frontmatter.timeforread}</timeforread> <IoRemoveOutline /> <BsFillPeopleFill /> <author >{frontmatter.author}</author> </p> 
                                                                                           
            </section>
           {Image ? (
@@ -123,9 +122,10 @@ return (
             ""
           )}
         </header>
-      
+       tags={post.frontmatter.tags}
+       <tags>{frontmatter.tags}</tags>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
-        
+       
       </article>
 
       {(previous || next) && <Pagination {...props} />}
