@@ -125,7 +125,7 @@ return (
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
        
       </article>
-      <p><IoMdPricetags /> Теги: <tags>{Post.frontmatter.tags}</tags></p>
+      <p><IoMdPricetags /> Теги(в разработке): <tags>{frontmatter.tags}</tags></p>
       {(previous || next) && <Pagination {...props} />}
       </Layout>
     
