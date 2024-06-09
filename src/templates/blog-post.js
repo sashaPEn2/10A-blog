@@ -101,7 +101,9 @@ return (
         image={Image}
         article={true}
       />
+      <script src="https://yastatic.net/share2/share.js" defer></script>
       
+
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">
@@ -120,7 +122,7 @@ return (
             ""
           )}
         </header>
-      
+      <div class="ya-share2" data-services="vkontakte,twitter,messenger"></div>
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
        
       </article>
