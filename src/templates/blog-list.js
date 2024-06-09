@@ -38,7 +38,6 @@ export const blogListQuery = graphql`
             slug
             title
             author
-            tags
             featuredImage {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
@@ -100,7 +99,6 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
       .filter(edge => !!edge.node.frontmatter.author)
-      .filter(edge => !!edge.node.frontmatter.tags)
       .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
     let props = {
       isFirst,

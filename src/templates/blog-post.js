@@ -7,7 +7,6 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaRegClock } from "react-icons/fa";
-import { IoMdPricetags } from "react-icons/io";
 
 
 
@@ -125,7 +124,6 @@ return (
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
        
       </article>
-      <p><IoMdPricetags /> Теги(в разработке): <tags>{frontmatter.tags}</tags></p>
       {(previous || next) && <Pagination {...props} />}
       </Layout>
     
@@ -146,7 +144,6 @@ export const pageQuery = graphql`
         description
         timeforread
         author
-        tags
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
