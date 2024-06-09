@@ -1,11 +1,12 @@
 const path = require("path")
+const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogList = path.resolve(`./src/templates/blog-list.js`)
-
+  const Tags = path.resolve("src/templates/tags.js")
   const result = await graphql(`
     {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -16,6 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
               template
               title
+              tags
             }
           }
         }
