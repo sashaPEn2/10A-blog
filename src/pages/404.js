@@ -14,6 +14,7 @@ const NotFound = () => (
         textAlign: "center",
       }}
     >
+      
       <header>
         <RiSkullLine
           style={{
