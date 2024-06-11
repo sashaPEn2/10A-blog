@@ -122,7 +122,8 @@ return (
             ""
           )}
         </header>
-      <div class="ya-share2" data-services="vkontakte,twitter,messenger"></div>
+        <div class="ya-share2" data-curtain data-limit="4" data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,moimir"></div>
+        
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
        
       </article>
