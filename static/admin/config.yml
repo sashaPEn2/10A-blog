@@ -15,6 +15,7 @@ backend:
 media_folder: static/assets
 public_folder: "/assets"
 
+locale: 'ru'
 
 collections:
   - name: authors
