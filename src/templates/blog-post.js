@@ -123,9 +123,15 @@ return (
           )}
         </header>
         <div class="ya-share2" data-curtain data-limit="4" data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,moimir"></div>
-        
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
-       
+        <div class="container">
+  <div class="login_bar">
+    <span class="login">super-email@gmail.com</span>
+    <span class="subscribe_button" onclick="subscribeOnClick()">subscribe</span>
+    <span class="subscribing"></span>
+    <span class="thanks"> Thank you. You have been subscribed</span>
+  </div>
+</div>
       </article>
       {(previous || next) && <Pagination {...props} />}
       </Layout>
