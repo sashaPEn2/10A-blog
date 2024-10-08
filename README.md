@@ -6,7 +6,7 @@
 Сайт 10А Столинской государтсвенной гимназии
 
 
-[![Gatsby Starter Foundation Screenshot](static/assets/gatsby-starter-foundation-light-mode.jpg)](https://foundation.stackrole.com)
+[![Gatsby Starter Foundation Screenshot](static/assets/photo_2024-10-08_20-17-26.jpg)](https://foundation.stackrole.com)
 
 ## Основные функции
 📅 Расписание уроков: Всегда актуальное расписание занятий.
