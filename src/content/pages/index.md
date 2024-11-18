@@ -6,6 +6,6 @@ tagline: 10А Столинской государственной гимнази
 featuredImage: /assets/271.jpg
 cta:
   ctaText: Как прошел наш год?
-  ctaLink: /blog
+  ctaLink: /our_achievements
 ---
 > В хорошем классе каждый ученик — это звезда, а вместе они создают яркое созвездие успеха.
