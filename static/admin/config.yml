@@ -16,7 +16,7 @@ media_folder: static/assets
 public_folder: "/assets"
 
 locale: 'ru'
-logo_url: https://blog-10a.netlify.app/static/assets/logo.svg
+logo_url: https://blog-10a.netlify.app/static/logo.svg
 collections:
   - name: authors
     label: Авторы
