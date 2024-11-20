@@ -16,7 +16,7 @@ media_folder: static/assets
 public_folder: "/assets"
 
 locale: 'ru'
-logo_url: https://kaleidoscopic-kheer-83bda3.netlify.app/exams/group.svg
+logo_url: https://kaleidoscopic-kheer-83bda3.netlify.app/exams/group.png
 collections:
   - name: authors
     label: Авторы
