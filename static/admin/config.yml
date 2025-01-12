@@ -16,6 +16,7 @@ media_folder: static/assets
 public_folder: "/assets"
 
 locale: 'ru'
+
 collections:
   - name: authors
     label: Авторы
@@ -27,17 +28,14 @@ collections:
       - {name: bio, label: Биография, widget: text}
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Новости" # Used in the UI
-    label_singular: "пост" # Used in the UI, ie: "New Post"
+    label_singular: "Пост" # Used in the UI, ie: "New Post"
     description: >
       Создавайте потрясающий контент здесь.
     folder: "src/content/posts"
-     filter:
-      field: Язык
-      value: ru
-     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
-     create: true # Allow users to create new documents in this collection
-     fields: # The fields each document in this collection have
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
       - {
           label: "Шаблон",
           name: "template",
