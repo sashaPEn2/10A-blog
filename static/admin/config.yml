@@ -16,7 +16,6 @@ media_folder: static/assets
 public_folder: "/assets"
 
 locale: 'ru'
-logo_url: https://kaleidoscopic-kheer-83bda3.netlify.app/exams/group.png
 collections:
   - name: authors
     label: Авторы
@@ -28,7 +27,7 @@ collections:
       - {name: bio, label: Биография, widget: text}
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Новости" # Used in the UI
-    label_singular: "Пост" # Used in the UI, ie: "New Post"
+    label_singular: "пост" # Used in the UI, ie: "New Post"
     description: >
       Создавайте потрясающий контент здесь.
     folder: "src/content/posts"
