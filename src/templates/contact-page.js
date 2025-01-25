@@ -42,6 +42,7 @@ const Contact = ({ data }) => {
         />
         <form
           className="contact-form"
+          encType="multipart/form-data"
           action="/thanks"
           name="contact"
           method="POST"
