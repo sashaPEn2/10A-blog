@@ -27,6 +27,7 @@ import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Banner from "../components/Banner"
 import Icons from "../util/socialmedia.json"
+import { BsAlignBottom } from "react-icons/bs";
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -272,8 +273,9 @@ const HomePage = ({ data }) => {
             </>
           ) : (
             ""
-          )}
+          )}<figcaption style={{textAlign: 'center', fontFamily: 'Times New Romans', fontStyle: 'italic'}}>Май 2024. Последний день учебного года.</figcaption>
         </div>
+        
       </div>
       <BlogListHome data={posts} />
       <Banner />
