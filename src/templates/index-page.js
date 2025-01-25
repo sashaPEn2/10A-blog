@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React from "react";
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -25,8 +26,6 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
-
-
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -243,13 +242,33 @@ const HomePage = ({ data }) => {
             {sIcons}
           </div>
         </div>
-        <div>
+        <div style={{ position: 'relative' }}>
           {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
+            <>
+              <GatsbyImage
+                image={Image}
+                alt={frontmatter.title + " - Featured image"}
+                className="featured-image"
+              />
+              <a href="/assets/271.jpg"><button
+                style={{
+                  position: 'absolute',
+                  top: '10px',
+                  left: '10px',
+                  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                  color: 'white',
+                  border: 'none',
+                  padding: '5px 10px',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                  opacity: 1,
+                  transition: 'opacity 0.3s',
+                }}
+                className="hd-button"
+              >
+                HD
+              </button></a>
+            </>
           ) : (
             ""
           )}
