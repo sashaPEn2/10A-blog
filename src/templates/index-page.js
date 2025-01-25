@@ -25,6 +25,7 @@ import { FaTiktok, FaWordpress, FaVk } from "react-icons/fa"
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
+import Banner from "../components/Banner"
 import Icons from "../util/socialmedia.json"
 
 export const pageQuery = graphql`
@@ -275,6 +276,7 @@ const HomePage = ({ data }) => {
         </div>
       </div>
       <BlogListHome data={posts} />
+      <Banner />
     </Layout>
   )
 }

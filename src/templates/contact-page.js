@@ -5,7 +5,7 @@ import { RiSendPlane2Line } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import Banner from "../components/Banner"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -93,6 +93,7 @@ const Contact = ({ data }) => {
           </p>
         </form>
       </div>
+      <Banner />
     </Layout>
   )
 }

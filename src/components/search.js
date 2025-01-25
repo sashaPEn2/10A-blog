@@ -8,12 +8,9 @@ import { RiSearchLine } from "react-icons/ri"
 export default class Search extends Component {
   constructor(props) {
     super(props)
-    this.state = { showSearch: false }
+    this.state = { showSearch: false, query: ``, results: [] }
     this.handleToggleClick = this.handleToggleClick.bind(this)
-    this.state = {
-      query: ``,
-      results: [],
-    }
+    this.index = this.getOrCreateIndex()
   }
 
   handleToggleClick() {
@@ -63,13 +60,12 @@ export default class Search extends Component {
 
   search = evt => {
     const query = evt.target.value
-    this.index = this.getOrCreateIndex()
-    this.setState({
-      query,
-      results: this.index
-        .search(query, {})
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
-    })
+    console.log("Search Index:", this.index)
+    const results = this.index
+      .search(query, {})
+      .map(({ ref }) => this.index.documentStore.getDoc(ref))
+    console.log("Search Results:", results)
+    this.setState({ query, results })
   }
 }
 

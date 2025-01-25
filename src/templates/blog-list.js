@@ -6,7 +6,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
-
+import Banner from "../components/Banner"
 const styles = {
   pagination: {
     a: {
@@ -121,6 +121,7 @@ class BlogIndex extends React.Component {
         <h1>Новости</h1>
         <div className="grids col-1 sm-2 lg-3">{posts}</div>
         <Pagination {...props} />
+        <Banner />
       </Layout>
     )
   }
