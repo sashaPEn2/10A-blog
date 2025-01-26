@@ -7,7 +7,6 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaRegClock } from "react-icons/fa";
-import Banner from "../components/Banner"
 
 
 
@@ -126,7 +125,6 @@ return (
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }}/>
       </article>
       {(previous || next) && <Pagination {...props} />}
-      <Banner />
       </Layout>
     
   )
