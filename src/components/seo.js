@@ -33,6 +33,7 @@ const SEO = ({ title, description, image, article }) => {
       <link rel="alternate" href={seo.url} hreflang="x-default" />
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1056474268918055"
      crossorigin="anonymous"></script>
+     <meta name="mailru-domain" content="9EAF93PHjsVOeH3N" />
       <meta name="description" content={seo.description} />
       <meta name="zen-verification" content="z9J8FAtvInWzgU5W2skuuYRNNMYaeUGLMiI7P47ampF8nXqo0X4B6yuZcbyaMhUI" />
       <meta name="google-site-verification" content="8Vkby0xVje9Xot2L3gWo5uwq3wnvcBZ1RhQbWpqiTDU" />
