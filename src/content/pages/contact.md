@@ -8,5 +8,5 @@ title: Обратная связь
 **Н﻿аш адрес:** 
 
 Телефон: +375 29 245-96-10\
-Email: info@blog-10a.netlify.app\
+Email: sashanevdah2010@gmail.com\
 Адрес: г. Столин, ул. Советская, д.54
